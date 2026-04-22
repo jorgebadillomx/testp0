@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "qa@test.com",
+      "password": "Password123",
+      "name": "QA User"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Auto Básico",
+      "baseRate": 1200
+    },
+    {
+      "id": 2,
+      "name": "Auto Amplio",
+      "baseRate": 1800
+    },
+    {
+      "id": 3,
+      "name": "Auto Premium",
+      "baseRate": 2400
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Auto Básico",
+      "customerName": "María Pérez",
+      "age": 29,
+      "zipCode": "03100",
+      "premium": 1320,
+      "createdAt": "2026-04-01T10:00:00.000Z"
+    }
+  ]
+}

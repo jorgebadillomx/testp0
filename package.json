@@ -1,0 +1,18 @@
+{
+  "name": "qa-automation-challenge-express",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hands-on express QA automation challenge",
+  "scripts": {
+    "install:all": "npm --prefix app/backend install && npm --prefix app/frontend install && npm install",
+    "dev": "concurrently \"npm --prefix app/backend run dev\" \"npm --prefix app/frontend run dev\"",
+    "start": "concurrently \"npm --prefix app/backend run start\" \"npm --prefix app/frontend run preview -- --host 0.0.0.0 --port 4173\"",
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "concurrently": "^9.0.1"
+  }
+}
